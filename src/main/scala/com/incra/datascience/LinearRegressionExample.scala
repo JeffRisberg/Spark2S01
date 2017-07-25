@@ -1,4 +1,3 @@
-
 // scalastyle:off println
 package com.incra.datascience
 
@@ -25,7 +24,7 @@ import scala.language.reflectiveCalls
 object LinearRegressionExample {
 
   case class Params(
-      input: String = null,
+      input: String = "data/sample_linear_regression_data.txt",
       testInput: String = "",
       dataFormat: String = "libsvm",
       regParam: Double = 0.0,
@@ -121,4 +120,3 @@ object LinearRegressionExample {
     spark.stop()
   }
 }
-// scalastyle:on println
